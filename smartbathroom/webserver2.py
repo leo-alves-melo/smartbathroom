@@ -5,10 +5,10 @@ from flask import Flask, url_for, jsonify, redirect, request, current_app, send_
 from TwitterAPI import TwitterAPI
 
 # TWITTER ACCOUNT DATA
-CONSUMER_KEY = 'mz5H49Ikw25EvJIJRqyhfZoB2'
-CONSUMER_SECRET = 'h6P9IAKpbDhBqTQ8GqNNNrJix7aKpVT5yJHnVtctH0po9i25EA'
-ACCESS_TOKEN_KEY = '4128015917-8nnTu0vZUKw5JhZtvkB9diSEWRIsUPDc9pwTGPH'
-ACCESS_TOKEN_SECRET = 'OQPmE3w110PZkiokUZxU8LrBaLmLVQZ5oSnBOuNamscpI'
+CONSUMER_KEY = '' #Insert here your consumer key
+CONSUMER_SECRET = '' #Insert here your consumer secret
+ACCESS_TOKEN_KEY = '' #Insert here your token key
+ACCESS_TOKEN_SECRET = '' #Insert here your token secret
 
 api = TwitterAPI(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_TOKEN_KEY,ACCESS_TOKEN_SECRET)
 
