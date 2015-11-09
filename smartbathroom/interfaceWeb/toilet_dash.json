@@ -1,0 +1,131 @@
+{
+	"version": 1,
+	"allow_edit": true,
+	"plugins": [],
+	"panes": [
+		{
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "gauge",
+					"settings": {
+						"title": "Ultra Sound Reading",
+						"value": "datasources[\"USOUND\"][\"usound\"]",
+						"units": "centimeters",
+						"min_value": 0,
+						"max_value": 100
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Current number of users",
+						"size": "regular",
+						"value": "datasources[\"PEOPLE\"][\"peopleInside\"]",
+						"animate": true,
+						"units": "people"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Maximum number of users at the same time",
+						"size": "regular",
+						"value": "datasources[\"MAX\"][\"maxInside\"]",
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Total number of users since startup",
+						"size": "regular",
+						"value": "datasources[\"TOTAL\"][\"totalInside\"]",
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 3
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "picture",
+					"settings": {
+						"src": "https://software.intel.com/sites/default/files/%5Bnode%3Acontent-type%3Amachine-name%5D/%5Bnode%3Anid%5D/intel-logo.png",
+						"refresh": 0
+					}
+				}
+			]
+		}
+	],
+	"datasources": [
+		{
+			"name": "USOUND",
+			"type": "JSON",
+			"settings": {
+				"url": "http://192.168.1.105/usound",
+				"use_thingproxy": false,
+				"refresh": 1,
+				"method": "GET"
+			}
+		},
+		{
+			"name": "PEOPLE",
+			"type": "JSON",
+			"settings": {
+				"url": "http://10.94.1.32/peopleInside",
+				"use_thingproxy": true,
+				"refresh": 1,
+				"method": "GET"
+			}
+		},
+		{
+			"name": "TOTAL",
+			"type": "JSON",
+			"settings": {
+				"url": "http://10.94.1.32/totalInside",
+				"use_thingproxy": false,
+				"refresh": 5,
+				"method": "GET"
+			}
+		},
+		{
+			"name": "MAX",
+			"type": "JSON",
+			"settings": {
+				"url": "http://10.94.1.32/maxInside",
+				"use_thingproxy": false,
+				"refresh": 5,
+				"method": "GET"
+			}
+		}
+	],
+	"columns": 3
+}
