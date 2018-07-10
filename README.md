@@ -11,3 +11,5 @@ As result, a better cleaning team dimensioning is expected, which leads to optim
 
 
 https://youtu.be/P7zu08QEyqU
+
+http://www.instructables.com/id/IoT-Smart-Bathroom/
