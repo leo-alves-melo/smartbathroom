@@ -1,7 +1,8 @@
 # smartbathroom
-Intel IoT Roadshow - 2015
 
+## Intel IoT Roadshow - 2015
 
+## Project
 This project aims to develop a “smart” bathroom making use of relevant capacity utilization data, 
 such as: people flow during a pre-established time interval; facility utilization data (number of visitors 
 versus time they stayed in the bathroom), and, according to the physical space utilization rate, trigger 
@@ -9,7 +10,6 @@ versus time they stayed in the bathroom), and, according to the physical space u
 areas with intense flow of people, such as hospital hallways, restaurants, museums and similar ones. 
 As result, a better cleaning team dimensioning is expected, which leads to optimization of resources utilization.
 
-
-https://www.youtube.com/watch?v=5aDcz7_BsXk
-
-http://www.instructables.com/id/IoT-Smart-Bathroom/
+## Links
+- [x] https://www.youtube.com/watch?v=5aDcz7_BsXk
+- [x] http://www.instructables.com/id/IoT-Smart-Bathroom/
